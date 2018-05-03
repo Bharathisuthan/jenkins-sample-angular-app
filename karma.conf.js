@@ -19,7 +19,7 @@ module.exports = function(config) {
     },
     coverageIstanbulReporter: {
       reports: ['html', 'lcovonly'],
-      fixWebpackSourcePaths: true
+      fixWebpackSourcePaths: true 
     },
     angularCli: {
       environment: 'dev'
@@ -29,7 +29,7 @@ module.exports = function(config) {
     colors: true,
     logLevel: config.LOG_INFO,
     autoWatch: true,
-    browsers: ['PhantomJS', 'Chrome'],
+    browsers: ['PhantomJS'],
     singleRun: true
   });
 };
