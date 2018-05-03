@@ -24,20 +24,23 @@ module.exports = function(config) {
     angularCli: {
       environment: 'dev'
     },
-    junitReporter: {
-      outputFile: 'test-results.xml'
-    },
-    // reporters: ['progress', 'kjhtml'],
+    reporters: ['progress', 'kjhtml'],
+    // reporters: ['progress', 'html'],
     port: 9876,
     colors: true,
     logLevel: config.LOG_INFO,
     autoWatch: true,
     browsers: ['PhantomJS'],
-    singleRun: true
-    reporters: ['dots', 'junit'];
-    junitReporter: {
-      outputFile: 'test-results.xml'
-    };
+    /*htmlReporter: {
+      outputFile: 'tests/units.html',
 
+      // Optional
+      pageTitle: 'Unit Tests',
+      subPageTitle: 'A sample project description',
+      groupSuites: true,
+      useCompactStyle: true,
+      useLegacyStyle: true
+    }*/
+    singleRun: true
   });
 };
