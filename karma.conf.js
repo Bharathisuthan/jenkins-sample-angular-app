@@ -25,22 +25,11 @@ module.exports = function(config) {
       environment: 'dev'
     },
     reporters: ['progress', 'kjhtml'],
-    // reporters: ['progress', 'html'],
     port: 9876,
     colors: true,
     logLevel: config.LOG_INFO,
     autoWatch: true,
     browsers: ['PhantomJS'],
-    /*htmlReporter: {
-      outputFile: 'tests/units.html',
-
-      // Optional
-      pageTitle: 'Unit Tests',
-      subPageTitle: 'A sample project description',
-      groupSuites: true,
-      useCompactStyle: true,
-      useLegacyStyle: true
-    }*/
     singleRun: true
   });
 };
